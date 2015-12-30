@@ -66,7 +66,7 @@
       clear: left;
       margin-bottom: 2em; }
   .deck-container .slide-subhead h1 {
-    margin: 0px;
+    margin-bottom: .1em;
     padding-top: 2em;
     transform: none;
     -webkit-transform: none;
