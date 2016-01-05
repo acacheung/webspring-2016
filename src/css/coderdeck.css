@@ -35,7 +35,7 @@
     .deck-container .slide-list h3 {
       margin-left: 2em;
       text-align: left;
-      color: #444444;
+      color: #444;
       margin-bottom: .3em;
       line-height: 1.6em; }
     .deck-container .slide-list h4 {
@@ -53,7 +53,7 @@
       .deck-container .slide-list li h3 {
         margin-left: 0; }
     .deck-container .slide-list p {
-      margin-top: -0.75em;
+      margin-top: -.75em;
       margin-left: 2em;
       text-align: left;
       line-height: 1.3em; }
@@ -102,7 +102,7 @@
     .deck-container .slide-background-content h1 {
       text-align: left;
       font-size: 2.5em;
-      margin: 0;
+      margin: .25em;
       padding-top: 1em;
       padding-left: 5%;
       padding-right: 15%;
@@ -161,7 +161,7 @@
       .deck-container .slide-accent h1 a {
         color: white; }
         .deck-container .slide-accent h1 a:hover {
-          color: #cccccc; }
+          color: #CCC; }
     .deck-container .slide-accent h2 {
       color: white;
       transform: none;
@@ -187,12 +187,12 @@
       text-transform: none;
       padding-top: 0; }
       .deck-container .slide-accent p a {
-        color: #cccccc; }
+        color: #CCC; }
         .deck-container .slide-accent p a:hover {
           color: white; }
   .deck-container .slide-homework {
     padding: 0 10%;
-    background: #444444; }
+    background: #444; }
     .deck-container .slide-homework h1 {
       font-size: 3.5em;
       text-align: left;
@@ -260,7 +260,7 @@
     text-transform: uppercase;
     color: #2ca58f;
     font-size: 4em;
-    letter-spacing: -0.02em;
+    letter-spacing: -.02em;
     word-spacing: .1em; }
   .deck-container h2 {
     font-size: 2.75em;
@@ -270,7 +270,7 @@
     text-transform: uppercase;
     color: #2ca58f;
     border: none;
-    letter-spacing: -0.02em;
+    letter-spacing: -.02em;
     word-spacing: .13em;
     padding: 0; }
   .deck-container h3 {
@@ -284,7 +284,7 @@
     text-transform: uppercase;
     color: #2ca58f;
     border: none;
-    letter-spacing: -0.02em;
+    letter-spacing: -.02em;
     word-spacing: .1em;
     padding: 0; }
   .deck-container .slide > pre {
@@ -295,7 +295,7 @@
     padding: 30px 50px; }
   .deck-container .example {
     font-size: 2.5em;
-    color: #444444;
+    color: #444;
     line-height: 2em;
     padding: .1em .15em 0 .15em;
     margin-left: .5em;
@@ -331,7 +331,7 @@
     background: #2ca58f;
     color: #fff; }
   .deck-container a, .deck-container a:hover, .deck-container a:focus, .deck-container a:active, .deck-container a:visited {
-    color: #777777;
+    color: #777;
     text-decoration: none; }
   .deck-container a:hover, .deck-container a:focus {
     color: #2ca58f; }
@@ -375,3 +375,5 @@
     background: #eee; }
   .deck-container.deck-menu .deck-current {
     background: #ddf; }
+
+/*# sourceMappingURL=coderdeck.css.map */
