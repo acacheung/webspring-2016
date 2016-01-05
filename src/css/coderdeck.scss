@@ -91,7 +91,7 @@ $gray-color:#CCC;
 
 		background:no-repeat top left;
 		background-size:100% auto;
-		h1 { text-align:left; font-size:2.5em; margin:0; padding-top:1em; padding-left:5%; padding-right:15%; @include no-transform; }
+		h1 { text-align:left; font-size:2.5em; margin:.25em; padding-top:1em; padding-left:5%; padding-right:15%; @include no-transform; }
 		h3 { text-align:left; margin:0; padding-bottom:1.5em; padding-left:5%; padding-right:15%; }
 
 		.background-wrapper{ background-color:white; }
