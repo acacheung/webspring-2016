@@ -99,9 +99,23 @@
   </ol>
 </article>
 
-
 <article class='slide slide-subhead'>
   <a href="homework.html"><h1>Homework</h1></a>
+</article>
+
+<article class='slide slide-subhead'>
+  <a href="http://alistapart.com/article/dao"><h1>A Dao of Web Design</h1></a>
+  <ol>
+    <li class="slide">
+      <h3>Pixel perfection</h3>
+    </li>
+    <li class="slide">
+      <h3>Many design best practices still apply: typography, negative space, contrast, etc.</h3>
+    </li>
+    <li class="slide">
+      <h3>Adaptability &amp; Accessibility</h3>
+    </li>
+  </ol>
 </article>
 
 <article class='slide slide-accent'>
@@ -112,7 +126,7 @@
 <article class='slide slide-subhead'>
   <h1>...but first a little review</h1>
   <h3>Let's let Jessica & Russ get us started!</h3>
-  <h3><a href="http://www.dontfeartheinternet.com/html/don%E2%80%99t-fear-starting-from-scratch">Don't Fear the Internet</a></h3>
+  <h3><a href="http://www.dontfeartheinternet.com/04-from-scratch/">Don't Fear the Internet</a></h3>
 </article>
 
 <article class='slide slide-accent'>
@@ -399,7 +413,7 @@
 
 <article class='slide slide-list'>
   <h1>The Alt Attribute</h1>
-  <h3>The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.</h3>
+  <h3>The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. <a href="http://csswizardry.com/2010/01/a-suitable-alternativeon-proper-use-of-alt-attributes/">For more info</a></h3>
   <div class="example">&lt;img &nbsp;src="lama.png"&nbsp;<b>alt="big llama"&gt;</b></div><br/>
   <p class="callout">You decide what the description text is.</br> The alt attribute is required for your code to validate.
   </p>
@@ -407,7 +421,7 @@
 
 <article class='slide slide-list'>
 <h2>Let's Link Some Images!!</h2>
-<p>link to all these images, cat.jpg (in a folder called images), llama.jpg (in the same folder as the html), otter.jpg (in the images folder in a folder called small), try to find owl.jpg and bunny.jpg</p>
+<p>link to all these images, cat.jpg (in a folder called images), llama.jpg (in the same folder as the html), otter.jpg (in the images folder in a folder called small)</p>
 <textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='F012-image-find'>
 </textarea>
 </article>
@@ -546,7 +560,7 @@
 </article>
 
 <article class="slide slide-image">
-  <img src='images/mr-burns.gif'/>
+  <img src='https://cdn.css-tricks.com/wp-content/uploads/2015/05/kiwi.svg'/>
 </article>
 
 <article class="slide slide-image">
@@ -554,7 +568,7 @@
 </article>
 
 <article class="slide slide-image">
-  <img src='images/big-logo.png'/>
+  <img src='https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1276794/san-francisco-office.png'/>
 </article>
 
 <article class='slide slide-accent'>
@@ -565,26 +579,22 @@
   <h1>Special Characters</h1>
   <h3>Have you ever tried to type ampersands, copyright symbols, quotation marks, greater-than, or less-than signs into your code as text?</h3>
   <h3><div class="example"><em> &nbsp; &amp; &nbsp;  &copy; &nbsp;  &ldquo; &nbsp;  &rdquo; &nbsp;  &hearts; &nbsp; &lt; &nbsp;  &gt;  &nbsp; </em></div></h3>
-  <h3>There are some characters that are used in HTML that you can't just type in, the browser will think it's code and not text to be displayed.</h3>
+  <h3>There are some characters that are used in HTML that you can't just type in, the browser will think it's code and not text to be displayed. <a href="https://www.w3.org/International/questions/qa-escapes#use">When to use escapes.</a></h3>
 </article>
-
-
-<article class='slide slide-subhead'>
-<h1>Google is our friend</h1>
-<h3><a href='http://www.webmonkey.com/2010/02/special_characters/'>http://www.webmonkey.com/2010/02/special_characters/</a></h3>
-<h3><a href='http://www.w3schools.com/tags/ref_entities.asp'>http://www.w3schools.com/tags/ref_entities.asp</a></h3>
-</article>
-
 
 <article class='slide slide-list'>
-<h2>Make my Characters Work</h2>
-<p>Look up and try adding some fun characters to your text</p>
+<h2>Make an h1 that says &lt;3</h2>
 <textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='F012-characters'>
 </textarea>
 </article>
 
 <article class='slide slide-accent'>
   <h1>Let's Talk CSS</h1>
+</article>
+
+<article class='slide slide-subhead'>
+  <h1>More from Jessica &amp; Russ</h1>
+  <h3><a href="http://www.dontfeartheinternet.com/05-from-scratch/">Don't Fear the Internet</a></h3>
 </article>
 
 <article class="slide slide-list">
@@ -632,20 +642,16 @@
 </article>
 
 <article class='slide slide-list'>
-<h2>Pay attention to your class and id names!</h2>
+<h2>Pay attention to your class names!</h2>
 <ul>
   <li class="slide">
     <h3>You can't use spaces.</h3>
   </li>
   <li class="slide">
-    <h3>You shouldn't use underscores (_) - altough technically now permitted</h3>
+    <h3>Javascript uses camelCase</h3>
   </li>
   <li class="slide">
-    <h3>Use camelCase or dashes-to-separate-names</h3>
-  </li>
-  <li class="slide">
-    <h3>I'd recommend dashes - css uses Dashses (<em>background-color, font-family</em>), <br/>
-      Javascript uses camelCase</h3>
+    <h3>I'd recommend dashes - css uses dashes (<em>background-color, font-family</em>)... for now - later introduce underscores because <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a></h3>
   </li>
   <li class="slide">
     <h3>Be consistent! - easier to read and remember what you wrote.</h3>
@@ -668,7 +674,7 @@
   </h3>
   </li>
   <li class='slide'>
-    <h3>element id preﬁxed with a pound sign (#)<br/>
+    <h3>element id preﬁxed with a hash / pound sign (#)<br/>
       <em>HTML </em>&lt;div <span class="callout">id=‘my-id</span>’&gt;<span class="light"> This is my id</span>&lt;/div&gt;<br/>
       <em>CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em><span class="callout">#my-id</span> { <span class="light"> color: red;</span> }
   </h3>
@@ -748,13 +754,7 @@
   <h3>Coding</h3>
        <ul>
       <li>
-        <h3>Add an image of you to your Meee page - make sure your code validates!</h3>
-      </li>
-      <li>
-        <h3>Go Back and fix the images in your cats vs dogs site - make sure your code validates!</h3>
-      </li>
-      <li>
-        <h3>Add a Second Page to your Recipe site and link to it - make sure your code validates!</h3>
+        <h3>Finish HTML for Dobot shop, meee, blog post. Validated!</h3>
       </li>
     </ul>
 </ul>
