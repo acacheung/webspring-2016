@@ -71,8 +71,7 @@
 <!-- Create any number of elements with class slide within the container -->
 <article class='slide slide-subhead'>
 <h1>More CSS <font color="red">&hearts;</font></h1>
-<h2>Week 4</h2>
-<p><a href='http://acacheung.github.io/webspring-2016/4.html'>http://acacheung.github.io/webspring-2016/4.html</a></p>
+<p>Week 4:<a href='http://acacheung.github.io/webspring-2016/4.html'>http://acacheung.github.io/webspring-2016/4.html</a></p>
 </article>
 	
 <article class='slide slide-list'>
@@ -105,9 +104,12 @@
 	</ol>
 </article>
 
+<article class='slide slide-accent'>
+  <h1>Let's Review <br/><a href="http://acacheung.com/gdi/intro/index.html#slide-9">HTML tags and attributes</a></h1>
+</article>
 
 <article class='slide slide-subhead'>
-  <a href="homework.html"><h1>Homework</h1></a>
+  <a href="homework.html"><h1>Homework Questions?</h1></a>
 </article>
 
 <article class='slide slide-accent'>
@@ -136,23 +138,22 @@
 <h2>Available selectors</h2>
 <ul>
 	 <li class='slide'>
-		 <h3>name of element (e.g. <em>p, div, h1</em>)</h3>
+		 <h3>Name of element (p, div, h1)</h3>
 	</li>
 	<li class='slide'>
-		<h3>
-		class name preﬁxed with a period (.)<br/>
-		<em>HTML </em>&lt;div <span class="callout">class=‘my-class-name</span>’&gt;<span class="light"> This is my class name </span>&lt;/div&gt;<br/>
-		<em>CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em><span class="callout">.my-class-name</span> {<span class="light"> font-size: 25px; </span>}
+		<h3>Class name, which is preﬁxed with a period (.)<br/>
+		HTML: &lt;div <span class="callout">class=‘my-class-name</span>’&gt;<span class="light"> This is my class name </span>&lt;/div&gt;<br/>
+		CSS: <span class="callout">.my-class-name</span> {<span class="light"> font-size: 25px; </span>}
 	</h3>
 	</li>
 	<li class='slide'>
-		<h3>element id preﬁxed with a pound sign (#)<br/>
-			<em>HTML </em>&lt;div <span class="callout">id=‘my-id</span>’&gt;<span class="light"> This is my id</span>&lt;/div&gt;<br/>
-			<em>CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em><span class="callout">#my-id</span> { <span class="light"> color: red;</span> }
+		<h3>Element id, which is preﬁxed with a pound sign / hash (#)<br/>
+			HTML: &lt;div <span class="callout">id=‘my-id</span>’&gt;<span class="light"> This is my id</span>&lt;/div&gt;<br/>
+			CSS: <span class="callout">#my-id</span> { <span class="light"> color: red;</span> }
 	</h3>
 </li>
 	 <li class='slide'>
-     <h3>id's are not recommended because of <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">these reasons</a></h3>
+     <h3>But, I don't recommend id's because of <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">these reasons</a></h3>
 	</li>
 </ul>
 </article>
@@ -377,22 +378,14 @@ p {
 		 <h3> Can have a declaration apply to multiple 
 			 styles with a comma (,)</h3>
 			<ul>
-				<li><em>.my-class-one, .my-class-two</em> { color:red; }</li>
+				<li><em>.my-class-one, .my-class-two</em> { color: red; }</li>
 		 	</ul>
 	</li>
 	<li class='slide'>
 		<h3> Can “Cascade” styles with spaces between selectors</h3>
 			<ul>
 				<li>HTML<pre>&lt;nav id='top'&gt;&lt;p&gt; ... &lt;/p&gt;&lt;/nav&gt;</pre>
-			 		CSS<pre><em>#top p </em> { color:red; } /* only p's inside of outer */</pre>
-				</li>
-		 	</ul>
-	</li>
-	<li class='slide'>
-		<h3> Can select only "child" styles with &gt; signs</h3>
-			<ul>
-				<li>HTML<pre>&lt;nav id='outer'&gt;&lt;ul&gt;&lt;li&gt; ... &lt;/li&gt;&lt;/ul&gt;&lt;/nav&gt;</pre>
-					CSS<pre><em>#outer > ul </em> { background-color:red; } /* only ul's that are direct children of outer */</pre>
+			 		CSS<pre><em>#top p </em> { color: red; } /* only p's inside of outer */</pre>
 				</li>
 		 	</ul>
 	</li>
@@ -415,6 +408,7 @@ p {
 </article>
 <article class='slide slide-list'>
 <h2>Selector Combination Exercise</h2>
+<p>With classes, make all the header and footer have black backgrounds with white text</p>
 <textarea class='coder-editor coder-editor-split coder-editor-instant' data-coder-template="coderdeck-plain" id='coderdeck-default'>
 <style>
 
@@ -479,9 +473,15 @@ p {
 <h2>Cascading - What Color?</h2>
 <textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" id='coderdeck-default'>
 <style>
-  p { color:red;}
-  .blue { color:blue; }
-  #menu p { color:black; }
+  p {
+    color: red;
+  }
+  .blue {
+    color: blue;
+  }
+  #menu p {
+    color: black;
+  }
 </style>
 
 <div id="menu"><p class='blue'>This is the paragraph</p></div>
@@ -494,48 +494,36 @@ p {
 	<ol>
 		<li class='slide'>
 			<h3>Start with your reset</h3>
-		</li>	
-		<li class="slide">
-			<h3>Set your body</h3>
 		</li>
 		<li class="slide">
-			<h3>Set your base element styles (p, h1, h2, blockqoute)</h3>
+			<h3>Set your base element styles (body, p, h1, h2)</h3>
 		</li>
 		<li class="slide">
-			<h3>Set your reusable class styles</h3>
-		</li>
-		<li class="slide">
-			<h3>Set your layout styles</h3>
-		</li>
-		<li class="slide">
-			<h3>Set your module styles (additional sub-themes like blogs,custom pages, etc )</h3>
+			<h3>Set your class styles - layout first, then visual</h3>
 		</li>
 	</ol>	
 </article>	
 
 <article class='slide slide-accent'>
-<h1>Logo Replacement</h1>
+<h1>Image Replacement</h1>
 </article>
 
 <article class='slide slide-list'>
 <h2>Logo Replacement</h2>
 <textarea class='coder-editor coder-editor-split' data-coder-template="coderdeck-plain" id='coderdeck-default'>
 &lt;style&gt;
-#site-header h1 a {
- display:block;  
- width:300px; 
- height:80px;  
- background:url(images/logo.png) no-repeat top left; 
- text-indent:-9999px;
+.logo {
+ width: 300px;
+ height: 80px;
+ background-image: url(images/logo.png);
+ text-indent: -9999px;
  }
 </style>
-<header id='site-header'>
- <h1><a href='#'>My Awesome Website</a></h1>
+<header>
+ <a href='#' class="logo"><h1>My Logo</h1></a>
 </header>
 </textarea>
 </article>
-
-
 
 <article class='slide slide-accent'>
 	<h1>Let's Talk Layout</h1>
@@ -578,44 +566,44 @@ p {
 
 <article class='slide slide-image'>
 <h1>Layout = Box Model</h2>
-<img src='images/layout.jpg'/>
+<img src='http://acacheung.com/gdi/intro/images/boxmodel.gif'/>
 </article>
 
 <article class="slide slide-list">
 <h1>Layout Properties</h1>
 <ul>
 <li class="slide">
-	<h3>Content:text the tags are wrapping</h3>
+	<h3>Content: the text</h3>
 		<ul>
-			<li>color:red;</li>
-			<li>font-size:20px;</li>
-			<li>text-transform:uppercase;</li>
+			<li>color: red;</li>
+			<li>font-size: 20px;</li>
+			<li>text-transform: uppercase;</li>
 		</ul>	
 </li>
 <li class="slide">
-	<h3>Padding:color behind the text</h3>
+	<h3>Padding: color behind the text</h3>
 	<ul>
-		<li>padding-top:5px; (-left, -right, -top, -bottom)</li>
+		<li>padding-top: 5px; (-left, -right, -top, -bottom)</li>
 		<li>padding:5px 10px;</li>
 		<li>padding:5px 3px 10px 20px;</li>
 	</ul>	
 	
 </li>
 <li class="slide">
-	<h3>Border:line around the padding</h3>
+	<h3>Border: line around the padding</h3>
 	<ul>
-		<li>border-style:solid;</li>
-		<li>border-width:5px;</li>
-		<li>border-color:red;</li>
-		<li>border:5px solid red;</li>
+		<li>border-style: solid;</li>
+		<li>border-width: 5px;</li>
+		<li>border-color: red;</li>
+		<li>border: 5px solid red;</li>
 	</ul>
 </li>
 <li class="slide">
-	<h3>Margin:transparent space around the padding and boarder</h3>
+	<h3>Margin: transparent space around the padding and border</h3>
 	<ul>
-		<li>margin-top:5px; (-left, -right, -top, -bottom)</li>
-		<li>margin:5px 10px;</li>
-		<li>margin:5px 3px 10px 20px;</li>
+		<li>margin-top: 5px; (-left, -right, -top, -bottom)</li>
+		<li>margin: 5px 10px;</li>
+		<li>margin: 5px 3px 10px 20px;</li>
 	</ul>
 </li>
 </ul>
@@ -623,21 +611,22 @@ p {
 
 <article class='slide slide-list'>
 <h2>Box Model Exercise</h2>
+<p>Set Box1 to be 100px in width, padding: 24px;, and a red border of 10px. What is the total amount of space it takes up horizontally?
 <textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='box-model'>
 <style>
-  #box1 { 
+  .box1 { 
     background-color:teal;
   }
 
-  #box2 { 
+  .box2 { 
     background-color:orange;
   }
 
 
 </style>
 
-<div id="box1">I'm a box</div>
-<div id="box2">I'm a box 2!</div>
+<div class="box1">I'm a box</div>
+<div class="box2">I'm a box 2!</div>
 </textarea>
 </article> 
 
@@ -654,7 +643,7 @@ p {
     <h3>1. Using floats to align things next to each other</h3>
 		</li>
 		<li class="slide">
-			<h3>2. Use “position:absolute; top:...; left:....” inside of a positioned container.</h3>
+			<h3>2. Use “position: absolute; top:...; left:....” inside of a positioned container.</h3>
 		</li>
     <style>
 .position-example { 
@@ -665,7 +654,7 @@ p {
 }
     </style>
 		<li class="position-example slide">
-    <h3 style=''>(I lied) 3. you can use transforms - but let's ignore those for now</h3>
+    <h3 style=''>(I lied) 3. you can use transforms or flexbox - but let's ignore those for now</h3>
 		</li>
 	</ul>
 </article>
@@ -675,16 +664,13 @@ p {
 <h3>Use this for content, page elements that need to flow or resize</h3><br/>
 	<ul>
 		<li class="slide">
-    <h3>Use float:left or float:right to float elements</h3>
+    <h3>Use float: left or float: right to float elements</h3>
 		</li>
 		<li class="slide">
     <h3>Make sure that elements have a width - floating will squeeze elements down</h3>
 		</li>
 		<li class="slide">
-    <h3>Make sure to clear your floats otherwise the container won't have a height</h3>
-		</li>
-		<li class="slide">
-    <h3>You need an extra element to clear, or can use the clearfix</h3>
+    <h3>Make sure to clear your floats or use an overflow, otherwise the container won't have a height</h3>
 		</li>
 	</ul>
 </article>
@@ -746,47 +732,19 @@ p {
 
 <article class='slide slide-homework' id="homework-4">
 <h2>Homework</h2>
-<h3 class='slide'>Reading</h3>
 <ul class='slide'>	
 	<li>
-		<h3>Duckett, Chapters 11, 12, 13, 14</h3>
+    <h3><a href="https://www.codecademy.com/learn/web" target="_blank">Units 4 and 5 on Codecademy</a></h3>
 	</li>
-	<li>
-        <h3><a href='http://coding.smashingmagazine.com/2009/10/05/mastering-css-coding-getting-started/'>Mastering CSS Coding: Getting Started</a>
-		</h3>
-	</li>
-</ul>
-<h3 class='slide'>Coding</h3>
-  <ul class='slide'>
     <li>
-      <h3>Style your Recipe card (create a css sheet, add in class &amp; id hooks to your html if needed)</h3>				
+      <h3>Work on CSS for Dobot</h3>				
     </li>
     <li>
-      <h3>Style  Cats vs. Dogs (we'll apply layout  style later)</h3>
-    </li>
-    <li>
-      <h3>Llama layout and styles (use floats)</h3>
+      <h3>Wireframe and mockup design for blog post</h3>
     </li>
   </ul>
 </ul>
 </article>
-
-<article class='slide slide-list'>
-	<h2>Llama Homework</h2>
-	<p>Default paragraphs to two paragraphs, with floated images<br/>
-		<h3><br/><img src="images/css-default.png" class='top-image'/><br/><br/></h3>
-</article>
-
-<article class='slide slide-list'>
-  <h2>Llama Love</h2>
-    <h3><br/><img src="images/css-style.png" class='top-image'/><br/><br/></h3>
-</article>
-
-<article class='slide slide-list'>
-	<h2>Layout for Cats vs. Dog</h2>
-		<h3><br/><img src="images/dogsvscat.png" class='top-image'/><br/><br/></h3>
-</article>
-
 
 
 
