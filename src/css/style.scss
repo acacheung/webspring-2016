@@ -56,7 +56,7 @@ $link-color:#777;
 $gray-color:#CCC;
 
 @mixin sans-font {
-	font-family:'Oswald', sans-serif;
+	font-family:'Niveau Grotesk', sans-serif;
 	font-weight:400;	
 	text-transform: uppercase;
 } 
@@ -64,7 +64,7 @@ $gray-color:#CCC;
 @mixin sans-bold-font {
 	font-style: normal;
 	font-weight: 700;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Niveau Grotesk', sans-serif;
 	text-transform: uppercase;	
 }
 
