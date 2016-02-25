@@ -79,6 +79,9 @@
 <h1>Order of Business</h1>
 	<ol>
 		<li class="slide">
+			<h3>Check-up</h3>
+		</li>
+		<li class="slide">
 			<h3>Review Homework</h3>
 		</li>
 		<li class="slide">
@@ -112,19 +115,19 @@
 </article>
 
 <article class="slide slide-list">
-<h1>Cascading Style Sheets</h1>
+<h1>What is CSS?</h1>
 <ul>
 <li class="slide">
-	<h3>Used for “presentation” of your HTML</h3>
+	<h3>Cascading style sheets</h3>
 </li>
 <li class="slide">
-	<h3>Controls the styles of your page</h3>
+	<h3>The presentation: Layout, styling</h3>
 </li>
 <li class="slide">
-	<h3>Also Controls the layout of your page (where stuff is positioned)</h3>
+	<h3>What is HTML for?</h3>
 </li>
 <li class="slide">
-	<h3>Can have different styles for different media formats (eg. print, screen, mobile)</h3>
+	<h3>HTML is for the structure (content, data)</h3>
 </li>
 </ul>
 </article>
@@ -148,22 +151,26 @@
 			<em>CSS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em><span class="callout">#my-id</span> { <span class="light"> color: red;</span> }
 	</h3>
 </li>
+	 <li class='slide'>
+     <h3>id's are not recommended because of <a href="http://csswizardry.com/2011/09/when-using-ids-can-be-a-pain-in-the-class/" target="_blank">these reasons</a></h3>
+	</li>
 </ul>
 </article>
 
 <article class='slide slide-list'>
-<h2>Pay attention to your class and id names!</h2>
-<ul><li class="slide">
+<h2>Pay attention to how you name things</h2>
+<ul>
+<li class="slide">
+	<h3>aka naming conventions</h3>
+</li>
+<li class="slide">
+  <h3>I use <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/" target="_blank">BEM</a> naming conventions</h3>
+</li>
+<li class="slide">
 	<h3>You can't use spaces.</h3>
 </li>
 <li class="slide">
-	<h3>You shouldn't use underscores (_) - although technically now permitted</h3>
-</li>
-<li class="slide">
-	<h3>Use camelCase or dashes-to-separate-names</h3>
-</li>
-<li class="slide">
-	<h3>I'd recommend dashes - css uses Dashes (<em>background-color, font-family</em>), <br/>
+	<h3>For now, I'd recommend dashes - css uses Dashes (<em>background-color, font-family</em>), <br/>
 		Javascript uses camelCase</h3>
 </li>
 <li class="slide">
@@ -197,24 +204,6 @@
 </ul>
 </article>
 
-
-<article class="slide slide-list">
-<h1>Values</h1>
-<ul>
-<li class="slide">
-	<h3>colors: #FFF, #FFFFFF, rgb(255,255,255), rgba(255,255,255, 1), gray, black, red</h3>
-</li>
-<li class="slide">
-	<h3>numbers: 0, 25px, 1.1em, 100%<br/>
-		<em>em's are 'M' height - and these inherit (multiply)</em>
-	</h3>
-</li>
-<li class="slide">
-	<h3>“inherit” is a special property to force inheritence</h3>
-</li>
-</ul>
-</article> 
-
 <article class='slide slide-accent'>
 	<h1>How do we use this in our sites?</h1>
 </article>
@@ -222,33 +211,58 @@
 <article class='slide slide-list'>
 	<h1>Remember</h1>
 	<ul>
-	<li><h3>Styles are Separate from HTML</h3></li>	
-	<li><h3>Usually only need 1 style sheet</h3></li>
+	<li><h3>Styles are Separate from HTML</h3></li>
 	<li><h3>Link to CSS in your HTML</h3></li>
 	<li><h3>Your CSS should start with a <a href='http://meyerweb.com/eric/tools/css/reset/'>RESET</a></h3></li>
-	</ul>	
+	</ul>
 </article>
 
-	
 <article class='slide slide-list'>
 		<p><br/><img src="images/style-linking-example.gif" class='top-image'/><br/><br/></p>
+</article>
+
+<article class='slide slide-list'>
+	<h1>Block elements vs inline elements</h1>
+		<p><br/><img src="http://acacheung.com/gdi/intro/images/block-inline.png" class='top-image'/><br/><br/></p>
+</article>
+
+<article class='slide'>
+  <h1>Block elements vs inline elements</h1>
+  <p>
+  <p><em>Block</em>: p, h1, h2, ul, li, most things</p>
+  <p><em>Inline</em>: images, links, em, strong</p>
+  <textarea class='coder-editor'>
+  <!DOCTYPE html>
+  <html>
+    <p>This is paragraph text. It is defaulted to display: block.</p>
+    <h1>This is a heading 1</h1>
+    <a href='#'>This is a link</a>
+    <img class='logo' src='http://girldevelopit.com/assets/pink-logo.png' />
+    <em>This is emphasized text<span>This is a span inside an em tag</span></em>
+    <strong>This is strong text</strong>
+  </html>
+  <style>
+    .logo {
+      width: 350px;
+    }
+    span {
+      color: orange;
+    }
+  </style>
+  </textarea>
 </article>
 
 <article class='slide slide-list'>
 	<h2>In Your HTML</h2>
 	<pre class='prettyprint'>
 &lt;head&gt;
-
-  &lt;link href="stylesheet.css" rel="Stylesheet" type="text/css" /&gt;
-
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;		
 	</pre>		
 </article>
 
-
-
 <article class='slide slide-list'>
-	<h2>Your CSS begins AFTER the reset</h2>
+	<h2>The Meyer Reset</h2>
 	<pre class='prettyprint'>
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -298,13 +312,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/* END OF RESET - Start of Your CSS*/
-
-
 	</pre>		
 </article>
-
 
 <article class='slide slide-accent'>
 	<h1>Styles</h1>
