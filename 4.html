@@ -99,6 +99,20 @@
 	</ol>
 </article>
 
+<article class='slide slide-list'>
+  <h1><a href="http://trentwalton.com/2012/06/08/jiro-sushi-web-type/">Blog chop</a></h1>
+  <ul>
+  <li class="slide">
+    <h3>WHAT your end users might want</h3>
+  </li>
+  <li class="slide">
+    <h3>WHY they want it</h3>
+  </li>
+  <li class="slide">
+    <h3>HOW to provide it to them</h3>
+  </li>
+</article>
+
 <article class='slide slide-subhead'>
   <h1>Questions?</h1>
 </article>
@@ -166,7 +180,7 @@
 	<h3>You can't use spaces.</h3>
 </li>
 <li class="slide">
-	<h3>For now, I'd recommend dashes - css uses Dashes (<em>background-color, font-family</em>), <br/>
+	<h3>For now, I'd recommend dashes - CSS uses Dashes (<em>background-color, font-family</em>), <br/>
 		Javascript uses camelCase</h3>
 </li>
 <li class="slide">
@@ -385,18 +399,18 @@ p {
 		 	</ul>
 	</li>
 	<li class='slide'>
-		<h3>Psudeo-classes that apply to elements in certain conditions</h3>
+		<h3>Pseudo-classes that apply to elements in certain conditions</h3>
 			<ul>
-				<li><em>a:hover</em> { color:blue; } /* only links we are hovering over */<br/>
-					<em>a:visited</em> { color:red; } /* links we've visited already */<br/>
-					<em>p:first-child</em> { color:red; } /* the first paragraph in a container */<br/>
+				<li><em>a:hover</em> { color: blue; } /* only links we are hovering over */<br/>
+					<em>a:visited</em> { color: red; } /* links we've visited already */<br/>
+					<em>p:first-child</em> { color: red; } /* the first paragraph in a container */<br/>
 				</li>
 			</ul>		
 	</li>
 	<li class='slide'>
 		<h3>Also can select by arbitrary attributes</h3>
 			<ul>
-				<li><em>input[type=radio]</em>{ color:blue; } /* only radio buttons */<br/></li>
+				<li><em>input[type=radio]</em>{ color: blue; } /* only radio buttons */<br/></li>
 			</ul>	
 	</li>
 </ul>
@@ -416,13 +430,13 @@ p {
   </ul></nav>
 </header>
 
-<section id='content'>
-  <article class='blog-post'>
+<section>
+  <article>
     <h1>Blog Post 1</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
   </article>
-  <article class='blog-post'>
+  <article>
     <h1>Blog Post 1</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
@@ -501,6 +515,7 @@ p {
 
 <article class='slide slide-accent'>
 <h1>Image Replacement</h1>
+<p>There are <a href="https://css-tricks.com/the-image-replacement-museum/">many methods</a>. I use <a href="http://snook.ca/archives/html_and_css/hiding-content-for-accessibility">this hybrid one</a>.</p>
 </article>
 
 <article class='slide slide-list'>
@@ -650,22 +665,6 @@ p {
     </style>
 		<li class="position-example slide">
     <h3 style=''>(I lied) 3. you can use transforms or flexbox - but let's ignore those for now</h3>
-		</li>
-	</ul>
-</article>
-
-<article class="slide slide-list">
-<h1>Layout with floats</h1>
-<h3>Use this for content, page elements that need to flow or resize</h3><br/>
-	<ul>
-		<li class="slide">
-    <h3>Use float: left or float: right to float elements</h3>
-		</li>
-		<li class="slide">
-    <h3>Make sure that elements have a width - floating will squeeze elements down</h3>
-		</li>
-		<li class="slide">
-    <h3>Make sure to clear your floats or use an overflow, otherwise the container won't have a height</h3>
 		</li>
 	</ul>
 </article>
