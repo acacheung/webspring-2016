@@ -71,15 +71,17 @@
 <!-- Create any number of elements with class slide within the container -->
 <article class='slide slide-subhead'>
 <h1>CSS Layout</h1>
-<h2>Week 5</h2>
-<p><a href='http://marthar.github.com/webfall-2015/5.html'>http://marthar.github.com/webfall-2015/5.html</a></p>
+<p>Week 4: <a href='http://acacheung.github.io/webspring-2016/5.html'>http://acacheung.github.io/webspring-2016/5.html</a></p>
 </article>
 	
 <article class='slide slide-list'>
 <h1>Order of Business</h1>
 	<ol>
 		<li class="slide">
-			<h3>Review Homework</h3>
+			<h3>Questions?</h3>
+		</li>
+		<li class="slide">
+			<h3>UX Audit</h3>
 		</li>
 		<li class="slide">
 			<h3>CSS Layout</h3>
@@ -105,9 +107,24 @@
 	</ol>
 </article>
 
-
 <article class='slide slide-subhead'>
-  <a href="homework.html"><h1>Homework</h1></a>
+  <h1>UX Audit: <a href="http://oyyo.se/">Oyyo</a></h1>
+  <ul>
+  <li class="slide">
+    <h3>WHAT your end users might want</h3>
+  </li>
+  <li class="slide">
+    <h3>WHY they want it</h3>
+  </li>
+  <li class="slide">
+    <h3>HOW to provide it to them</h3>
+  </li>
+  <li class="slide">
+    <h3>Usable? (<a href="http://uxpa2016.org/">Seattle UXPA conference 2016</a>)</h3>
+  </li>
+  <li class="slide">
+    <h3>Delightful?</h3>
+  </li>
 </article>
 
 <article class='slide slide-accent'>
@@ -136,9 +153,6 @@
 	<h3>display [none, block, inline inline-block]</h3>
 </li>
 <li class="slide">
-	<h3>visibility [visible, hidden]</h3>
-</li>
-<li class="slide">
 	<h3>background (color, image, repeat, position)</h3>
 </li>
 </ul>
@@ -151,96 +165,50 @@
 
 <article class='slide slide-image'>
 <h1>Layout = Box Model</h2>
-<img src='images/layout.jpg'/>
+<img src='images/boxmodel.gif'/>
 </article>
 
 <article class="slide slide-list">
 <h1>Layout Properties</h1>
 <ul>
 <li class="slide">
-	<h3>Content:text the tags are wrapping</h3>
+	<h3>Content: the text</h3>
 		<ul>
-			<li>color:red;</li>
-			<li>font-size:20px;</li>
-			<li>text-transform:uppercase;</li>
+			<li>color: red;</li>
+			<li>font-size: 20px;</li>
+			<li>text-transform: uppercase;</li>
 		</ul>	
 </li>
 <li class="slide">
-	<h3>Padding:color behind the text</h3>
+	<h3>Padding: color behind the text</h3>
 	<ul>
-		<li>padding-top:5px; (-left, -right, -top, -bottom)</li>
+		<li>padding-top: 5px; (-left, -right, -top, -bottom)</li>
 		<li>padding:5px 10px;</li>
 		<li>padding:5px 3px 10px 20px;</li>
-	</ul>	
-	
+  </ul>	
 </li>
 <li class="slide">
-	<h3>Border:line around the padding</h3>
+	<h3>Border: line around the padding</h3>
 	<ul>
-		<li>border-style:solid;</li>
-		<li>border-width:5px;</li>
-		<li>border-color:red;</li>
-		<li>border:5px solid red;</li>
+		<li>border-style: solid;</li>
+		<li>border-width: 5px;</li>
+		<li>border-color: red;</li>
+		<li>border: 5px solid red;</li>
 	</ul>
 </li>
 <li class="slide">
-	<h3>Margin:transparent space around the padding and boarder</h3>
+	<h3>Margin: transparent space around the padding and border</h3>
 	<ul>
-		<li>margin-top:5px; (-left, -right, -top, -bottom)</li>
-		<li>margin:5px 10px;</li>
-		<li>margin:5px 3px 10px 20px;</li>
+		<li>margin-top: 5px; (-left, -right, -top, -bottom)</li>
+		<li>margin: 5px 10px;</li>
+		<li>margin: 5px 3px 10px 20px;</li>
 	</ul>
 </li>
 </ul>
 </article>
 
-<article class='slide slide-list'>
-<h2>Box Model Exercise</h2>
-<textarea class='coder-editor coder-editor-split coder-editor-instant'  data-save='S2012-blog-post-chop'>
-<style>
-  #box1 { 
-    background-color:teal;
-  }
-
-  #box2 { 
-    background-color:orange;
-  }
-
-
-</style>
-
-<div id="box1">I'm a box</div>
-<div id="box2">I'm a box 2!</div>
-</textarea>
-</article> 
-
-
 <article class='slide slide-accent'>
 	<h1>How do you layout elements on the page?</h1>
-</article>
-
-
-<article class="slide slide-list">
-<h1>Only two ways to layout:</h1>
-	<ul>
-		<li class="slide">
-    <h3>1. Using floats to align things next to each other</h3>
-		</li>
-		<li class="slide">
-			<h3>2. Use “position:absolute; top:...; left:....” inside of a positioned container.</h3>
-		</li>
-    <style>
-.position-example { 
-  -webkit-transition: -webkit-transform 1s linear; 
-  -webkit-transform: translate(0,0) rotate(0deg); }
-.position-example.deck-current {
- -webkit-transform: translate(30px,250px) rotate(15deg);
-}
-    </style>
-		<li class="position-example slide">
-    <h3 style=''>(I lied) 3. you can use transforms - but let's ignore those for now</h3>
-		</li>
-	</ul>
 </article>
 
 <article class="slide slide-list">
@@ -248,16 +216,13 @@
 <h3>Use this for content, page elements that need to flow or resize</h3><br/>
 	<ul>
 		<li class="slide">
-    <h3>Use float:left or float:right to float elements</h3>
+    <h3>Use float: left or float: right to float elements</h3>
 		</li>
 		<li class="slide">
-    <h3>Make sure that elements have a width - floating will squeze elements down</h3>
+    <h3>Make sure to use overflow: auto otherwise the container won't have a height</h3>
 		</li>
 		<li class="slide">
-    <h3>Make sure to clear your floats otherwise the container won't have a height</h3>
-		</li>
-		<li class="slide">
-    <h3>You need an extra element to clear, or can use the clearfix</h3>
+    <h3>You need an extra element to clear</h3>
 		</li>
 	</ul>
 </article>
@@ -267,21 +232,20 @@
 </article>
 
 <article class="slide slide-list">
-<h1>Position</h1>
-<h3>used for elements that will always stay in the same place (logos, navbars, footers)</h3><br/>
+  <h1>Position</h1>
 	<ul>
 		<li class="slide">
-			<h3>position:static</h3>
+			<h3>position: static (default)</h3>
 		</li>
 		<li class="slide">
-			<h3>position:relative</h3>
+			<h3>position: relative</h3>
 		</li>
 		<li class="slide">
-			<h3>position:absolute</h3>
+			<h3>position: absolute</h3>
 		</li>
 		<li class="slide">
-			<h3>position:fixed</h3>
-		</li>				
+			<h3>position: fixed</h3>
+		</li>
 	</ul>
 </article>
 
@@ -302,11 +266,13 @@
 		</li>
 		<li class="slide">
 			<h3>Use coordinates to move the item "relative" to where it is normally<br/>
-				example: top:0px; left:0px;<br/>
-				example: bottom:5px; right:20px;</h3> 
+				example: top: 5px; left: 20px;</h3>
 		</li>
 		<li class="slide">
 			<h3>When you move things relatively, the space they take-up on the page stays the same</h3>
+		</li>
+		<li class="slide">
+			<h3>Difference between this and using something like a negative margin-top</h3>
 		</li>
 	</ul>
 </article>
@@ -322,10 +288,10 @@
 			<h3>Warning: when you position absolutely the page element is removed completely from the flow of the page</h3>
 		</li>		
 		<li class="slide">
-			<h3>Use “position:relative” to create an zone for absolutely positioning content</h3>
+			<h3>Use “position: relative” to create an zone for absolutely positioning content</h3>
 		</li>
 		<li class="slide">
-			<h3>Use “position:absolute; top:...; left:....” to place something inside that zone.</h3>
+			<h3>Use “position: absolute; top:...; left:....” to place something inside that zone.</h3>
 		</li>
 	</ul>
 </article>
@@ -334,7 +300,7 @@
 <h1>Position Fixed</h1>
 	<ul>
 		<li class="slide">
-			<h3>Use rarely - usually only for sticky navbars (page will scroll and nav stays at the top or bottom)</h3>
+			<h3>Use for things that stay on the screen in that position. Example: sticky navbars (page will scroll and nav stays at the top or bottom)</h3>
 		</li>
 	</ul>
 </article>
@@ -350,68 +316,75 @@
 <h2>Positioning Exercise</h2>
 <textarea class='coder-editor coder-editor-split coder-editor-instant' >
 <style>
-  #container { 
-    background-color:lightgray; 
-    margin:20px; height:400px; 
+  .blocks {
+    margin: 20px;
+    height: 400px;
+    background-color: lightgray;
   }
 
-  .block1 {
-    background-color:orange;
-    padding:50px;
+  .block--orange,
+  .block--red,
+  .block--teal {
+    height: 100px;
+    width: 100px;
   }
 
-  .block2 {
-    background-color:red;
-    padding:50px;
+  .block--orange {
+    background-color: orange;
   }
 
-  .block3 {
-    background-color:teal;
-    padding:50px;
+  .block--red {
+    background-color: red;
+  }
+
+  .block--teal {
+    background-color: teal;
   }
 
 </style>
-<section id='container'>
-	  <div class='block1'></div>
-	  <div class='block2'></div>
-	  <div class='block3'></div>
+<section class="blocks">
+	  <div class="block--orange"></div>
+	  <div class="block--red"></div>
+	  <div class="block--teal"></div>
 </section>
 </textarea>
 <script type='coder-solution'>
 <style>
-  #container { 
-    background-color:lightgray; 
-    margin:20px; height:400px; 
-    position:relative;
+  .blocks {
+    margin: 20px;
+    position: relative;
+    height: 400px;
+    background-color: lightgray;
   }
 
-  .block1 {
-    background-color:orange;
-    padding:50px;
-    position:absolute;
+  .block--orange,
+  .block--red,
+  .block--teal {
+    position: absolute;
+    height: 100px;
+    width: 100px;
   }
 
-  .block2 {
-    background-color:red;
-    padding:50px;
-    position:absolute;
-    top:100px; 
-    left:100px;
+  .block--orange {
+    background-color: orange;
   }
 
-  .block3 {
-    background-color:teal;
-    padding:50px;
-    position:absolute;
-    bottom:0;
-    right:0;
+  .block--red {
+    top: 100px;
+    left: 100px;
+    background-color: red;
   }
 
+  .block--teal {
+    right: 0;
+    bottom: 0;
+    background-color: teal;
+  }
 </style>
-<section id='container'>
-	  <div class='block1'></div>
-	  <div class='block2'></div>
-	  <div class='block3'></div>
+<section class="blocks">
+	  <div class="block--orange"></div>
+	  <div class="block--red"></div>
+	  <div class="block--teal"></div>
 </section>
 
 </script>
@@ -429,20 +402,24 @@
 <h2>Floats and Positioning Exercise</h2>
 <textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" id='coderdeck-default' data-save='fall2012-positioning'>
 <style>
-  #container { background-color:lightgray; margin:20px; height:300px; }
+  .container {
+    margin:20px;
+    height:300px;
+    background-color: lightgray;
+  }
 
 
 </style>
-<div id='site'>
+<div class="site">
 Above Container
-<div id='container'>
-  <div id='top-left'>I'm in the top left!</div>
-  <div id='bottom-right'>I'm in the bottom right!</div>
-  <div class='blocks'>
-	  <div class='block'></div>
-	  <div class='block'></div>
-	  <div class='block'></div>
-	  <div class='block'></div>
+<div class="container">
+  <div class="top-left">I'm in the top left!</div>
+  <div class="bottom-right">I'm in the bottom right!</div>
+  <div class="blocks">
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
+	  <div class="block"></div>
   </div>
 </div>
 Below Container
