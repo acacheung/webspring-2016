@@ -125,6 +125,9 @@
   <li class="slide">
     <h3>Delightful?</h3>
   </li>
+  <li class="slide">
+    <h3>Go through the process of purchasing the largest size of the Labyrinth rug. How much will it cost?</h3>
+  </li>
 </article>
 
 <article class='slide slide-accent'>
@@ -307,7 +310,7 @@
 
 <article class='slide slide-list'>
 <h2>Positioning Exercise</h2>
-<h3>using position:relative and absolute let's try to make this</h3>
+<h3>using position: relative and absolute let's try to make this</h3>
 <h3><img src="images/positioning-ex.gif"/></h3>
 </article>
 
@@ -340,8 +343,8 @@
   .block--teal {
     background-color: teal;
   }
-
 </style>
+
 <section class="blocks">
 	  <div class="block--orange"></div>
 	  <div class="block--red"></div>
@@ -381,6 +384,7 @@
     background-color: teal;
   }
 </style>
+
 <section class="blocks">
 	  <div class="block--orange"></div>
 	  <div class="block--red"></div>
@@ -388,116 +392,112 @@
 </section>
 
 </script>
-</article> 
-
-
+</article>
 
 <article class='slide slide-list'>
 <h1>Combining Floats and Positioning</h1>
 <img src='images/position-exercise.png'/>
 </article>
 
-
 <article class='slide slide-list'>
 <h2>Floats and Positioning Exercise</h2>
-<textarea class='coder-editor coder-editor-full' data-coder-template="coderdeck-plain" id='coderdeck-default' data-save='fall2012-positioning'>
+<textarea class='coder-editor coder-editor-split' data-coder-template="coderdeck-plain" id='coderdeck-default' data-save='fall2012-positioning'>
 <style>
   .container {
     margin:20px;
     height:300px;
     background-color: lightgray;
   }
-
-
 </style>
+
 <div class="site">
-Above Container
-<div class="container">
-  <div class="top-left">I'm in the top left!</div>
-  <div class="bottom-right">I'm in the bottom right!</div>
-  <div class="blocks">
-	  <div class="block"></div>
-	  <div class="block"></div>
-	  <div class="block"></div>
-	  <div class="block"></div>
+  Above Container
+  <div class="container">
+    <div class="top-left">I'm in the top left!</div>
+    <div class="bottom-right">I'm in the bottom right!</div>
+    <div class="blocks">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
   </div>
-</div>
-Below Container
+  Below Container
 </div>
 </textarea>
 </article> 
-
 
 <article class='slide slide-accent'>
 <h1>Navbar Excercise 1: Styling</h1>
 </article>
 
-
 <article class='slide slide-list'>
-<h2>Navbar: Make this</h2>
-<img src='images/menubar.png'/>
+<h2>Navbar: Make this (floated to the right and hover #ddd)</h2>
+<img src='images/menubar.png'>
 <textarea class='coder-editor coder-editor-split' data-coder-template="coderdeck-plain" id='coderdeck-default'>
 <style>
 	/* Style it here */
-
 </style>
-<nav id='main-menu'>
-<ul>
-	<li>
-		<a href="#">Home</a></li>
-	<li>
-		<a href="#">About</a></li>
-	<li>
-		<a href="#">Blog</a></li>
-	<li class='last'>
-		<a href="#">Contact</a></li>
-</ul>
+
+<nav class="nav">
+  <ul>
+    <li>
+      <a href="#">Home</a></li>
+    <li>
+      <a href="#">About</a></li>
+    <li>
+      <a href="#">Blog</a></li>
+    <li class="last">
+      <a href="#">Contact</a></li>
+  </ul>
 </nav>
 </textarea>
+
 <script type='coder-solution'>
 <style>
-/* Style it here */
-#main-menu  {
-    position:absolute;
-    top:20px;
-    right:20px;
-    background-color:teal;
-    float:right;
-    border-radius:5px;
-    box-shadow:4px 4px 4px #ddd;
-    padding:0 10px;
-    margin:0 20px;
- }
-  #main-menu li { 
-    float:left; 
-    border-right:3px solid #fff;
+  .nav {
+    float: right;
   }
-  #main-menu li.last { border:0px; }
-  #main-menu li a { display:block; 
-    padding:15px 15px;
-    font-size:17px;
-    color:white;
-    font-family:sans-serif;
-    text-transform:uppercase;
-    text-decoration:none;
+
+  .nav a {
+    padding: 15px;
+    display: inline-block;
+    float: left;
+    background-color: teal;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
   }
-  #main-menu li a:hover { background-color:#DDD; }
+
+  .nav a:hover {
+    background-color: #ddd;
+  }
+
+  .nav a:not(:last-child) {
+    border-right: 3px solid #fff;
+  }
+
+  .nav a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .nav a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 </style>
-<nav id='main-menu'>
-<ul>
-	<li>
-		<a href="#">Home</a></li>
-	<li>
-		<a href="#">About</a></li>
-	<li>
-		<a href="#">Blog</a></li>
-	<li class='last'>
-		<a href="#">Contact</a></li>
-</ul>
+
+<nav class="nav">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Blog</a>
+  <a href="#">Contact</a>
 </nav>
 </script>
 </article>
-
 
 <article class='slide slide-list'>
 <h2>Positioning Playground</h2>
