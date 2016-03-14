@@ -126,7 +126,10 @@
     <h3>Delightful?</h3>
   </li>
   <li class="slide">
-    <h3>Go through the process of purchasing the largest size of the Labyrinth rug. How much will it cost?</h3>
+    <h3>Go through the process of purchasing the largest size of the Labyrinth rug.</h3>
+  </li>
+  <li class="slide">
+    <h3>What questions would you want to answer?</h3>
   </li>
 </article>
 
@@ -303,7 +306,10 @@
 <h1>Position Fixed</h1>
 	<ul>
 		<li class="slide">
-			<h3>Use for things that stay on the screen in that position. Example: sticky navbars (page will scroll and nav stays at the top or bottom)</h3>
+			<h3>Use for things that stay on the screen in that position. Example:
+        <a href="https://dockyard.com/">sticky navbars</a>
+        (page will scroll and nav stays at the top or bottom)
+      </h3>
 		</li>
 	</ul>
 </article>
@@ -386,11 +392,10 @@
 </style>
 
 <section class="blocks">
-	  <div class="block--orange"></div>
-	  <div class="block--red"></div>
-	  <div class="block--teal"></div>
+  <div class="block--orange"></div>
+  <div class="block--red"></div>
+  <div class="block--teal"></div>
 </section>
-
 </script>
 </article>
 
@@ -442,13 +447,17 @@
 <nav class="nav">
   <ul>
     <li>
-      <a href="#">Home</a></li>
+      <a href="#">Home</a>
+    </li>
     <li>
-      <a href="#">About</a></li>
+      <a href="#">About</a>
+    </li>
     <li>
-      <a href="#">Blog</a></li>
+      <a href="#">Blog</a>
+    </li>
     <li class="last">
-      <a href="#">Contact</a></li>
+      <a href="#">Contact</a>
+    </li>
   </ul>
 </nav>
 </textarea>
@@ -500,31 +509,6 @@
 </article>
 
 <article class='slide slide-list'>
-<h2>Positioning Playground</h2>
-<p> Static vs. Relative vs. Absolute vs. Fixed</p>
-<textarea class='coder-editor coder-editor-split coder-editor-instant' data-language='html'>
-<p>Here's a paragraph of text before!</p>
-<div id='box1' class='box'>
-  <div id='box2' class='box'>
-    <div id='box3' class='box'>
-     <div id='box4' class='box'>
-     </div>
-    </div>
-  </div>
-</div>
-<p>Here's a paragraph of text after!</p>
-<style>
-   html, body { height: 100%; }
-  .box { width:50%; height:50%; opacity:0.9; }
-  #box1 { background-color:blue; }
-  #box2 { background-color:red; }
-  #box3 { background-color:green; }
-  #box4 { background-color:orange; }
-</style>
-</textarea>
-</article>
-
-<article class='slide slide-list'>
 <h1>Only way to position stuff? No</h1>
 <ul>
 	<li class="slide">
@@ -539,138 +523,25 @@
 </ul>
 </article>
 
-<article class='slide slide-list'>
-<h2>Display Playground</h2>
-<p>Floats, clears, inline, inline-block, block</p>
-<textarea class='coder-editor coder-editor-split coder-editor-instant' data-language='html'>
-<div id='wrapper'>
-  <div id='div1'>Here's a div before</div>
-  <span id='span1'>Here's a span of text before!</span>
-  <span id='span2'>Here's another span of somewhat longer text that is going right here</span>
-  <span id='span3'>Here's a span of text after!</span>
-  <div id='div2'>Here's a div after</div>
-</div>
-<style>
-  body { font-size:2em; }
-  span { background-color: pink; }
-  #wrapper { background-color:rgba(200,200,200,0.7); }
-</style>
-</textarea>
-</article>
-
-
 <article class='slide slide-accent'>
 	<h1>More Layout Techniques</h1>
 </article>	
-
-<article class="slide slide-subhead">
-	<h1>Start with<br/> your reset</h1>
-	<p>Eric Meyer Reset<br/>
-		<a href="http://meyerweb.com/eric/tools/css/reset/">http://meyerweb.com/eric/tools/css/reset/</a>
-	</p>
-	<h2><a href="http://bit.ly/meyerreset">http://bit.ly/meyerreset</a>
-	</h2>	
-</article>
 
 <article class='slide slide-list'>
 	<h1>Centering Content</h1>
 	<h3>Give it a width and set margin: 0 auto;</h3>
 <pre>
 body {
-  margin:0 auto;
-  width:960px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
 }
-	</pre>
+</pre>
+</article>
+
+<article class='slide slide-accent'>
+	<h1>Do this to Dobot</h1>
 </article>	
-
-
-<article class="slide slide-list">
-<h1>Basic Chop 101</h1>
-	<ul>
-		<li class="slide">
-			<h3>Relatively positioned header</h3>
-		</li>
-		<li class="slide">
-			<h3>Absolutely positioned top nav</h3>
-		</li>
-		<li class="slide">
-			<h3>Image replacement logo</h3>
-		</li>
-		<li class="slide">
-			<h3>Floated menu items</h3>
-		</li>
-		<li class="slide">
-			<h3>Floated body</h3>
-		</li>
-		<li class="slide">
-			<h3>Relatively positioned footer</h3>
-		</li>	
-	</ul>
-</article>
-
-<article class="slide slide-list">
-<h2>CSS Code</h2>
-	<pre>body { width:960px; margin:0 auto; }
-		
-header#site-header {
-  position:relative; height:80px;
-}
-
-#site-header h1 a { 
-  display:block;	
-  text-indent:-9999px;    
-  position:absolute;
-  width:300px; height:80px;
-  background:url(logo.png) no-repeat left top;
-}
-nav#top-nav { position:absolute; right:0px; top:0px; }
-
-nav#main-menu { height:30px; background-color:black; }
-nav#main-menu ul li { display:block; float:left; padding:0 5px; }
-nav#main-menu ul li a { display:block; color:white; padding:5px 5px; background-color:blue; }
-
-section#page-content { float:left; width:550px; padding:50px 20px; }
-aside#sidebar { float:right; width:220px; padding:50px 10px;; }
-
-footer#site-footer {     clear:both; background-color:black;     color:white; padding:10px 0px;  }</pre>
-</article>
-
-<article class="slide slide-list">
-<h1>Floats, Clears and Clearfix</h1>
-	<ul>
-		<li class="slide">
-			<h3>Put a background on your wrapper. What happens?</h3>
-		</li>
-		<li class="slide">
-			<h3>Have to clear your floats, or use a clearfix.</h3>
-		</li>
-		<li class="slide">
-			<h3>Will affect your content centering margin.</h3>
-		</li>
-	</ul>
-</article>
-
-
-<article class="slide slide-list">
-<h2>Clearfix</h2>
-	<pre>.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-	}
-
-.clearfix { display: inline-block; }
-  html[xmlns] .clearfix { display: block; }
-  * html .clearfix { height: 1%; }</pre>
-</article>
-
-
-
-
-
 
 <article class='slide slide-accent'>
 	<h1>CSS3</h1>
@@ -689,13 +560,13 @@ footer#site-footer {     clear:both; background-color:black;     color:white
       <h3>text-shadow</h3>
 		</li>
 		<li class="slide">
-    <h3><a href='http://www.html5rocks.com/en/tutorials/flexbox/quick/'>flexbox</a></h3>
+    <h3><a href='http://flexboxfroggy.com/'>flexbox</a></h3>
 		</li>
 		<li class="slide">
     <h3>rgba</h3>
 		</li>
 		<li class="slide">
-    <h3><a href='http://www.colorzilla.com/gradient-editor/'>background gradients</a></h3>
+    <h3><a href='https://css-tricks.com/examples/CSS3Gradient/'>background gradients</a></h3>
 		</li>
 	</ol>	
 </article>	
@@ -706,13 +577,13 @@ footer#site-footer {     clear:both; background-color:black;     color:white
 </article>
 
 <article class='slide slide-list'>
-<h3>Using</h3>
+<h1>Using</h1>
 <ul>
-	<li><h3>-webkit-transform: rotate(#deg)</h3></li>	
-	<li><h3>border-radius: #</h3></li>
-	<li><h3>box-shadow: left  bottom  spread  color</h3></li>
-	<li><h3>text-shadow: #</h3></li>
-</ul>	
+	<li><h3>transform: rotate</h3></li>
+	<li><h3>border-radius</h3></li>
+  <li><h3><a href="https://css-tricks.com/snippets/css/css-box-shadow/">box-shadow</a></h3></li>
+	<li><h3>text-shadow</h3></li>
+</ul>
 </article>
 
 <article class='slide slide-list'>
@@ -811,7 +682,7 @@ footer#site-footer {     clear:both; background-color:black;     color:white
   		<h3>Can have a number of other properties including direction, repeat, duration</h3>
   	</li>
   	<li class="slide">
-    <h3><a href='http://www.w3.org/TR/css3-animations/'>See the spec</a></h3>
+    <h3><a href='https://css-tricks.com/almanac/properties/a/animation/'>See the CSS Tricks almanac</a></h3>
   	</li>
   </ul>
 </article>
@@ -1059,26 +930,7 @@ body {
 			</li>
 		</ul>
 </ul>	
-	
-	
 </article>
-
-<article class='slide slide-list'>
-	<h1>Robots</h1>
-		<h3><br/><img src="images/evilgenius.png" class='top-image'/><br/><br/></h3>
-</article>
-
-<article class='slide slide-list'>
-	<h2>Llama Love</h2>
-		<h3><br/><img src="images/css-style.png" class='top-image'/><br/><br/></h3>
-</article>
-
-<article class='slide slide-list'>
-	<h2>Cats vs. Dog</h2>
-		<h3><br/><img src="images/dogsvscat.png" class='top-image'/><br/><br/></h3>
-</article>
-
-
 
 <script src='dist/coderdeck.min.js'></script>
 
