@@ -763,9 +763,9 @@ body {
   }
 
   .logo {
-    display: block;
+    margin-top: 0;
     position: absolute;
-    left: 15px;
+    left: 16px;
     height: 100px;
     width: 250px;
     background-color: white;
@@ -775,18 +775,23 @@ body {
     position: absolute;
     right: 15px;
     width: 150px;
-    height: 20px;
     background-color: white;
   }
 
   .main-nav {
-    position: relative;
-    height: 55px;
+    overflow: auto;
     background-color: #4f3a11;
   }
 
-  .main-menu li {
-    margin: 10px 0 5px 15px;
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
     padding: 10px;
     display: block;
     float: left;
@@ -810,17 +815,15 @@ body {
   }
 
   .footer {
+    overflow: auto;
     clear: both;
-    position: relative;
-    height: 55px;
     background-color: #4f3a11;
   }
 
   .footer h1 {
-    background-color: white;
-    float: left;
-    width: 20%;
     margin: 15px;
+    width: 20%;
+    background-color: white;
   }
 </style>
 
