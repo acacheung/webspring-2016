@@ -588,57 +588,71 @@ body {
 
 <article class='slide slide-list'>
   <h1>Let's make a polaroid</h1>
-  <p>Let's make a polaroid (<a href='http://www.flickr.com/photos/snowpeak/4152675183/'>Image Source</a>)</p>
+  <p>
+    Let's make a polaroid (<a href='http://www.flickr.com/photos/snowpeak/4152675183/'>Image Source</a>).
+    What's <a href="http://html5doctor.com/the-figure-figcaption-elements/">figure and figcaption</a>?
+  </p>
   <textarea class='coder-editor coder-editor-instant'>
 <style>
-  .container { text-align:center; padding-top:30px;}
-  .polaroid {
-    display:inline-block;
+  div {
+    padding-top: 30px;
+    text-align: center;
+  }
+  figure {
+    display: inline-block;
     width: 282px;
-    font-size:1.2em;
-    color:#444;
-    font-family:times;
-    font-weight:bold;
- 
+    font-size: 20px;
+    font-family: Chalkboard, cursive;
+    font-weight: bold;
+    color: #444;
+  }
 </style>
-<div class='container'>
-  <div class='polaroid'>
+
+<div>
+  <figure>
    <img src='images/birds.jpg'>
-    Those are some crazy birds!
-  </div>
+   <figcaption>Those are some crazy birds!</figcaption>
+  </figure>
 </div>
 
-  </textarea>
+</textarea>
 <script type='coder-solution'>
 <style>
-  .container { text-align:center; padding-top:30px;}
-  .polaroid {
-    display:inline-block;
-    width: 282px;
-    border:1px solid #eee;
-    border-radius:4px;
-    padding:10px 10px 30px 10px;
-    box-shadow:5px 5px 10px #CCC;
-    -webkit-transform:rotate(15deg);
-    font-size:1.3em;
-    color:#444;
-    background-color:#f3f3f3;
-    font-family: Chalkboard, cursive;
-    font-style:italic;
-    text-transform:uppercase;
-    font-weight:bold;
-    text-shadow:1px 1px #fff;
+  div {
+    padding-top: 30px;
+    text-align: center;
   }
-  img { margin-bottom:10px; }
-  
+  figure {
+    padding: 10px 10px 30px 10px;
+    display: inline-block;
+    width: 282px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #ccc;
+    background-color: #f3f3f3;
+    font-size: 20px;
+    font-family: Chalkboard, cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff;
+    color: #444;
+    transform: rotate(15deg);
+  }
+  figcaption {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
+  }
 </style>
-<div class='container'>
-  <div class='polaroid'>
-   <img src='images/birds.jpg'>
-    Those are some <br/>crazy birds!
-  </div>
-</div>
 
+<div>
+  <figure>
+   <img src='images/birds.jpg'>
+   <figcaption>Those are some crazy birds!</figcaption>
+  </figure>
+</div>
 </script>
 </article>
 
@@ -656,8 +670,8 @@ body {
     transition-property: background-color;
   }
 
-  .#box:hover {
-    background-color:red;
+  .box:hover {
+    background-color: red;
   }
 </style>
 
@@ -684,7 +698,7 @@ body {
 </article>
 
 <article class="slide slide-image">
-	<h1>Exercise: Pulling it all Together</h1>
+	<h2>Exercise: Pulling it all Together</h2>
 	<img src='images/screenshot.png'/>
 </article>
 	
@@ -698,7 +712,7 @@ body {
 </style>
 
 <header class="header">
-  <h1>Logo</h1>
+  <h1 class="logo">Logo</h1>
   <nav class="top-nav">top-nav</nav>
 </header>
 
@@ -748,72 +762,70 @@ body {
 	background-color: #d4e0a3;
 }
 
-#site-header h1 {
-	position:absolute;
-	display:block;
-	width:250px;
-	height:100px;
-	background-color:white;
-	left:15px;
-}
-#top-nav { 
-	position:absolute;
-	right:15px;
-	width:150px;
-	height:20px;
-	background-color:white;
+.logo {
+	display: block;
+	position: absolute;
+	left: 15px;
+	height: 100px;
+	width: 250px;
+	background-color: white;
 }
 
-	
-
-#main-menu {
-	position:relative;
-	height:55px;
-	background-color:#4f3a11;
-}	
-#main-menu li{
-	float:left;
-	display:block;
-	padding:10px;
-	margin:10px 0px 5px 15px;
-	background-color:white;
-}	
-
-
-#page { 
-	float:left; 
-	width:60%;
-	background-color:#fffac2;
-	margin:20px 15px;
-	padding:10px;
-}	
-
-#sidebar {
-	float:right;
-	width:30%;
-	margin-top:20px;
-	padding:10px;
-	background-color:#fffac2;
-}	
-
-#site-footer {
-	clear:both;
-	position:relative;
-	height:55px;
-	background-color:#4f3a11;
+.top-nav {
+	position: absolute;
+	right: 15px;
+	width: 150px;
+	height: 20px;
+	background-color: white;
 }
 
-#footer-content h1 {
-	background-color:white;
-	float:left;
-	width:20%;
-	margin:15px 15px;
+.main-nav {
+	position: relative;
+	height: 55px;
+	background-color: #4f3a11;
 }
 
+.main-menu li {
+	margin: 10px 0 5px 15px;
+	padding: 10px;
+	display: block;
+	float: left;
+	background-color: white;
+}
+
+.page {
+	float: left;
+	width: 60%;
+	background-color: #fffac2;
+	margin: 20px 15px;
+	padding: 10px;
+}
+
+.sidebar {
+	margin-top: 20px;
+	padding: 10px;
+	float: right;
+	width: 30%;
+	background-color: #fffac2;
+}
+
+.footer {
+	clear: both;
+	position: relative;
+	height: 55px;
+	background-color: #4f3a11;
+}
+
+.footer h1 {
+	background-color: white;
+	float: left;
+	width: 20%;
+	margin: 15px;
+}
 </style>
 
 <header class="header">
-  <h1>Logo</h1>
+  <h1 class="logo">Logo</h1>
   <nav class="top-nav">top-nav</nav>
 </header>
 
