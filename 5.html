@@ -687,43 +687,6 @@ body {
   </ul>
 </article>
 
-<article class='slide slide-list'>
-  <h2>CSS3 Animations Example</h2>
-  <p>You'll need all your prefixes here! (-webkit, -moz, -ms) - only showing webkit for brevity</p>
-<textarea class='coder-editor'>
-<style>
-
-  @-webkit-keyframes coloranim {
-    0% {
-      background-color:green;
-    }
-    50% {
-      background-color:red;
-    }
-    100% {
-      background-color:blue;
-    }
-  }
-
-  #box:hover { 
-    -webkit-animation-name:none;
-  }
-
-  #box {
-    background-color:black;
-    width:50px;
-    height:50px;
-    -webkit-animation-name: coloranim;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: 4;
-    -webkit-animation-direction:alternate;
-    -webkit-animation-timing-function: ease-in-out;
-  }
-</style>
-<div id='box'></div>
-</textarea>
-</article>
-
 <article class="slide slide-image">
 	<h2>Exercise: Pulling it all Together</h2>
 	<img src='images/screenshot.png'/>
