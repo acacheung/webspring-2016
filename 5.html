@@ -156,7 +156,7 @@
 	<h3>ﬂoat [ left, right, none ], clear [ left, right, both]</h3>
 </li>
 <li class="slide">
-	<h3>display [none, block, inline inline-block]</h3>
+	<h3>display [none, block, inline, inline-block]</h3>
 </li>
 <li class="slide">
 	<h3>background (color, image, repeat, position)</h3>
@@ -645,27 +645,23 @@ body {
 
 <article class='slide slide-list'>
 <h2>CSS Transitions Example</h2>
-<a href='http://css3.bradshawenterprises.com/all/'>More Examples</a>
+<a href='http://tympanus.net/Development/IconHoverEffects/'>More Examples</a>
 <textarea class='coder-editor'>
 <style>
-  #box {
-    transition: background-color 2s;
-    -moz-transition: background-color 2s;
-    -webkit-transition: background-color 2s;
-    -ms-transition: background-clor 2s;
-    -o-transition: background-color 2s;
-    width:50px;
-    height:50px;
-    background-color:green;
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    transition-duration: .25s;
+    transition-property: background-color;
   }
 
-  #box:hover {
+  .#box:hover {
     background-color:red;
-
   }
 </style>
-<div id='box'></div>
 
+<div class='box'></div>
 </textarea>
 </article>
 
@@ -688,71 +684,68 @@ body {
 </article>
 
 <article class="slide slide-image">
-	<h2>Exercise: Pulling it all Together</h2>
+	<h1>Exercise: Pulling it all Together</h1>
 	<img src='images/screenshot.png'/>
 </article>
 	
 <article class='slide slide-list'>
 <h2>Exercise: Pulling it all Together</h2>
-<textarea class='coder-editor coder-editor-full'>
+<textarea class='coder-editor coder-editor-split'>
 
 <style>
 
 
 </style>
-	
-<header id='site-header'>
+
+<header class="header">
   <h1>Logo</h1>
-  <nav id='top-nav'>top-nav</nav>
+  <nav class="top-nav">top-nav</nav>
 </header>
 
-<nav id='main-menu'>
+<nav class="main-nav">
   <ul>
    <li>main menu</li>
    <li>main menu</li>
    <li>main menu</li>
-  </ul>	
+  </ul>
 </nav>
 
-<article id='page'>
-    <h1>Header 1</h1>
-    <h2>Subhead</h2>
-    <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+<article class="page">
+  <h1>Header 1</h1>
+  <h2>Subhead</h2>
+  <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
 
-    <h2>Subhead</h2>
-    <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+  <h2>Subhead</h2>
+  <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
 </article>
 
-<aside id='sidebar'>
+<aside class="sidebar">
   <h1>Sidebar</h1>
   <ul>
     <li>Sidebar list</li>
     <li>Sidebar list</li>
     <li>Sidebar list</li>
   </ul>
-</aside> <!-- end #sidebar -->
-	
-<footer id='site-footer'>
-  <section id='footer-content'>
-    <h1>Footer</h1>     
-  </section>
+</aside>
+
+<footer class="footer">
+  <h1>Footer</h1>
 </footer>
 
 </textarea>
 <script type='coder-solution'>
 
 <style>
-
 body {
-	width:960px;
-	margin:0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  width: 960px;
 }
 
-#site-header {
-	position:relative;
-	height:120px;
-	background-color:#d4e0a3;
-	
+.header {
+	position: relative;
+	height: 120px;
+	background-color: #d4e0a3;
 }
 
 #site-header h1 {
@@ -818,44 +811,41 @@ body {
 }
 
 </style>
-	
-<header id='site-header'>
+
+<header class="header">
   <h1>Logo</h1>
-  <nav id='top-nav'>top-nav</nav>
+  <nav class="top-nav">top-nav</nav>
 </header>
 
-<nav id='main-menu'>
+<nav class="main-nav">
   <ul>
    <li>main menu</li>
    <li>main menu</li>
    <li>main menu</li>
-  </ul>	
+  </ul>
 </nav>
 
-<article id='page'>
-    <h1>Header 1</h1>
-    <h2>Subhead</h2>
-    <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+<article class="page">
+  <h1>Header 1</h1>
+  <h2>Subhead</h2>
+  <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
 
-    <h2>Subhead</h2>
-    <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+  <h2>Subhead</h2>
+  <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
 </article>
 
-<aside id='sidebar'>
+<aside class="sidebar">
   <h1>Sidebar</h1>
   <ul>
     <li>Sidebar list</li>
     <li>Sidebar list</li>
     <li>Sidebar list</li>
   </ul>
-</aside> <!-- end #sidebar -->
-	
-<footer id='site-footer'>
-  <section id='footer-content'>
-    <h1>Footer</h1>     
-  </section>
-</footer>
+</aside>
 
+<footer class="footer">
+  <h1>Footer</h1>
+</footer>
 </script>
 </article>
 
