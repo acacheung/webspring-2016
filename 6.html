@@ -80,7 +80,13 @@
 <h1>Order of Business</h1>
 	<ol>
 		<li>
-			<h3>Review Homework</h3>
+			<h3>Questions?</h3>
+		</li>
+		<li>
+			<h3>UX Audit</h3>
+		</li>
+		<li>
+			<h3>Finish last week's slides</h3>
 		</li>
 		<li>
 			<h3>Designing for Users</h3>
@@ -97,9 +103,323 @@
 	</ol>
 </article>
 
-
 <article class='slide slide-subhead'>
   <a href="homework.html"><h1>Homework</h1></a>
+</article>
+
+<article class='slide slide-list'>
+  <h1>UX Audit: <a href="https://spotify-valentines.com/">Spotify Valentine’s</a></h1>
+  <ul>
+  <li class="slide">
+    <h3>WHAT your end users might want</h3>
+  </li>
+  <li class="slide">
+    <h3>WHY they want it</h3>
+  </li>
+  <li class="slide">
+    <h3>HOW to provide it to them</h3>
+  </li>
+  <li class="slide">
+    <h3>Usable?</h3>
+  </li>
+  <li class="slide">
+    <h3>Delightful?</h3>
+  </li>
+  <li class="slide">
+    <h3>Go through creating a playlist for your best friend to show how much you love them!</h3>
+  </li>
+</article>
+
+<article class='slide slide-image'>
+<h1><img src="images/polaroid.png" class='top-image'/>Let's make a polaroid</h1>
+</article>
+
+<article class='slide slide-list'>
+<h1>Using</h1>
+<ul>
+	<li><h3>transform: rotate</h3></li>
+	<li><h3>border-radius</h3></li>
+  <li><h3><a href="https://css-tricks.com/snippets/css/css-box-shadow/">box-shadow</a></h3></li>
+	<li><h3>text-shadow</h3></li>
+</ul>
+</article>
+
+<article class='slide slide-list'>
+  <h1>Let's make a polaroid</h1>
+  <p>
+    Let's make a polaroid (<a href='http://www.flickr.com/photos/snowpeak/4152675183/'>Image Source</a>).
+    What's <a href="http://html5doctor.com/the-figure-figcaption-elements/">figure and figcaption</a>?
+  </p>
+  <textarea class='coder-editor coder-editor-instant'>
+<style>
+  div {
+    padding-top: 30px;
+    text-align: center;
+  }
+  figure {
+    display: inline-block;
+    width: 282px;
+    font-size: 20px;
+    font-family: Chalkboard, cursive;
+    font-weight: bold;
+    color: #444;
+  }
+</style>
+
+<div>
+  <figure>
+   <img src='images/birds.jpg'>
+   <figcaption>Those are some crazy birds!</figcaption>
+  </figure>
+</div>
+
+</textarea>
+<script type='coder-solution'>
+<style>
+  div {
+    padding-top: 30px;
+    text-align: center;
+  }
+  figure {
+    padding: 10px 10px 30px 10px;
+    display: inline-block;
+    width: 282px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 5px 5px 10px #ccc;
+    background-color: #f3f3f3;
+    font-size: 20px;
+    font-family: Chalkboard, cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff;
+    color: #444;
+    transform: rotate(15deg);
+  }
+  figcaption {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 200px;
+  }
+</style>
+
+<div>
+  <figure>
+   <img src='images/birds.jpg'>
+   <figcaption>Those are some crazy birds!</figcaption>
+  </figure>
+</div>
+</script>
+</article>
+
+
+<article class='slide slide-list'>
+<h2>CSS Transitions Example</h2>
+<a href='http://tympanus.net/Development/IconHoverEffects/'>More Examples</a>
+<textarea class='coder-editor'>
+<style>
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    transition-duration: .25s;
+    transition-property: background-color;
+  }
+
+  .box:hover {
+    background-color: red;
+  }
+</style>
+
+<div class='box'></div>
+</textarea>
+</article>
+
+<article class='slide slide-list'>
+  <h2>CSS3 Animations</h2>
+  <ul>
+  	<li class="slide">
+  		<h3>Are defined with keyframes</h3>
+  	</li>
+  	<li class="slide">
+  		<h3>Have a name</h3>
+  	</li>
+  	<li class="slide">
+  		<h3>Can have a number of other properties including direction, repeat, duration</h3>
+  	</li>
+  	<li class="slide">
+    <h3><a href='https://css-tricks.com/almanac/properties/a/animation/'>See the CSS Tricks almanac</a></h3>
+  	</li>
+  </ul>
+</article>
+
+<article class="slide slide-image">
+	<h2>Exercise: Pulling it all Together</h2>
+	<img src='images/screenshot.png'/>
+</article>
+	
+<article class='slide slide-list'>
+<h2>Exercise: Pulling it all Together</h2>
+<textarea class='coder-editor coder-editor-full'>
+
+<style>
+
+
+</style>
+
+<header class="header">
+  <h1 class="logo">Logo</h1>
+  <nav class="top-nav">top-nav</nav>
+</header>
+
+<nav class="main-nav">
+  <ul>
+   <li>main menu</li>
+   <li>main menu</li>
+   <li>main menu</li>
+  </ul>
+</nav>
+
+<article class="page">
+  <h1>Header 1</h1>
+  <h2>Subhead</h2>
+  <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+
+  <h2>Subhead</h2>
+  <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+</article>
+
+<aside class="sidebar">
+  <h1>Sidebar</h1>
+  <ul>
+    <li>Sidebar list</li>
+    <li>Sidebar list</li>
+    <li>Sidebar list</li>
+  </ul>
+</aside>
+
+<footer class="footer">
+  <h1>Footer</h1>
+</footer>
+
+</textarea>
+<script type='coder-solution'>
+
+<style>
+  body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 960px;
+  }
+
+  .header {
+    position: relative;
+    height: 120px;
+    background-color: #d4e0a3;
+  }
+
+  .logo {
+    margin-top: 0;
+    position: absolute;
+    left: 16px;
+    height: 100px;
+    width: 250px;
+    background-color: white;
+  }
+
+  .top-nav {
+    position: absolute;
+    right: 15px;
+    width: 150px;
+    background-color: white;
+  }
+
+  .main-nav {
+    overflow: auto;
+    background-color: #4f3a11;
+  }
+
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 16px;
+    padding: 10px;
+    display: block;
+    float: left;
+    background-color: white;
+  }
+
+  .page {
+    float: left;
+    width: 60%;
+    background-color: #fffac2;
+    margin: 20px 15px;
+    padding: 10px;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+    padding: 10px;
+    float: right;
+    width: 30%;
+    background-color: #fffac2;
+  }
+
+  .footer {
+    overflow: auto;
+    clear: both;
+    background-color: #4f3a11;
+  }
+
+  .footer h1 {
+    margin: 15px;
+    width: 20%;
+    background-color: white;
+  }
+</style>
+
+<header class="header">
+  <h1 class="logo">Logo</h1>
+  <nav class="top-nav">top-nav</nav>
+</header>
+
+<nav class="main-nav">
+  <ul>
+   <li>main menu</li>
+   <li>main menu</li>
+   <li>main menu</li>
+  </ul>
+</nav>
+
+<article class="page">
+  <h1>Header 1</h1>
+  <h2>Subhead</h2>
+  <p>Text goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+
+  <h2>Subhead</h2>
+  <p>ext goes here, remember it's length might vary, so you might not want to set a specific height. Floating might be good.</p>
+</article>
+
+<aside class="sidebar">
+  <h1>Sidebar</h1>
+  <ul>
+    <li>Sidebar list</li>
+    <li>Sidebar list</li>
+    <li>Sidebar list</li>
+  </ul>
+</aside>
+
+<footer class="footer">
+  <h1>Footer</h1>
+</footer>
+</script>
 </article>
 
 <article class='slide slide-accent'>
@@ -163,10 +483,6 @@ is the process of enhancing customer satisfaction and loyalty by improving the u
 	<li class="slide"><h3>who are visiting for the ﬁrst time</h3></li>
 	<li class="slide"><h3>who aren’t people but machines (SEO)</h3></li>
 </ul>
-</article>
-
-<article class="slide slide-subhead">
-<h2><br/><br/>You are also designing for<br/> <em>2014 Web Surfers</em></h2>
 </article>
 
 <article class='slide slide-list'>
@@ -264,9 +580,6 @@ is the process of enhancing customer satisfaction and loyalty by improving the u
 	</li>
 	<li class="slide">
 		<h3>Auto-playing media</h3>
-	</li>
-	<li class="slide">
-		<h3>No back button</h3>
 	</li>
 </ul>
 </article>
