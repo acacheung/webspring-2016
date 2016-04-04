@@ -1,14 +1,59 @@
+body {
+  background-color: #faf8f2 !important;
+  background-image: url(images/bg.png);
+}
+
+p {
+  font-size: 24px !important;
+  font-weight: 100 !important;
+  color: #737067;
+}
+
+h3 {
+  margin-top: 1em !important;
+  font-size: 1.5em !important;
+  font-weight: 100 !important;
+  color: #4c4a44 !important;
+}
+
+img {
+  width: 80%;
+}
+
+.image--small {
+  float: left;
+  width: 30%;
+}
+
+.gdi-logo {
+  width: 300px;
+}
+
+.box-model {
+  width: 400px;
+}
+
+h2.gray {
+  color: #737067 !important;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.center {
+  text-align: center
+}
+
 .deck-container {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Niveau Grotesk', sans-serif;
   font-weight: 400;
   font-size: 1.25em;
   background: #fff; }
-  .deck-container .slide {
-    background: #fff; }
   .deck-container .slide-title {
     background: black; }
     .deck-container .slide-title h1 {
-      font-family: 'Arvo', serif;
+      font-family: 'Niveau Grotesk', sans-serif;
       font-weight: 400;
       color: #d3502c;
       text-transform: none; }
@@ -19,27 +64,21 @@
     margin-bottom: .3em; }
   .deck-container .slide-list h3 {
     font-size: 1.4em;
-    color: #444444;
+    color: #737067;
     margin-bottom: .1em; }
   .deck-container .slide-list ul {
     margin-left: 1em;
     list-style-type: square;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Niveau Grotesk', sans-serif;
     font-weight: 400;
     color: #d3502c; }
   .deck-container .slide-list li {
     padding-left: .5em; }
-  .deck-container .slide-list p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: .9em;
-    color: #444444; }
   .deck-container .slide-subhead h1 {
     font-size: 5em;
     position: static;
     margin: 0px;
     padding-top: 2em;
-    padding-bottom: 0.5em;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -52,27 +91,29 @@
     padding: 0px;
     padding-top: .1em; }
   .deck-container h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.04em;
+    font-family: 'Niveau Grotesk', sans-serif;
+    font-weight: 500;
     font-size: 5em;
     line-height: .9em;
-    text-transform: uppercase;
     padding-top: 7em;
-    color: #000; }
+    color: #4c4a44; }
   .deck-container h2 {
-    font-family: 'Arvo', serif;
+    font-family: 'Niveau Grotesk', sans-serif;
     font-weight: 400;
-    color: #bf0000;
+    color: #fb755a;
     border: none; }
   .deck-container h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Niveau Grotesk', sans-serif;
     font-weight: 800; }
   .deck-container .slide > pre {
     padding:10px;
     border-color: #ccc; }
   .deck-container code {
     color: #888; }
+  .deck-container em {
+    color: #669933;
+    font-weight: bold;
+    font-style: normal; }
   .deck-container blockquote {
     font-size: 2em;
     font-style: italic;
