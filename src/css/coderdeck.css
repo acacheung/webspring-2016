@@ -74,6 +74,9 @@ h2.gray {
     color: #d3502c; }
   .deck-container .slide-list li {
     padding-left: .5em; }
+  .deck-container .slide-list .mobile {
+		width:320px; display:inline-block; margin-left:2em; clear:left; margin-bottom:2em;
+  }
   .deck-container .slide-subhead h1 {
     font-size: 5em;
     position: static;
